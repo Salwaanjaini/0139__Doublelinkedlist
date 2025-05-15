@@ -124,8 +124,11 @@ public:
             // step 4: if Current is not the last node
             if(Current->next != NULL)
             Current->next->prev = Current->prev;
-
         }
+
+        // step 5: Deleted the node
+        delete Current;
+        cout << "Record with roll number" << rollNo << "deleted" << endl;
 
     }
     

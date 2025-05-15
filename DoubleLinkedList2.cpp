@@ -120,7 +120,10 @@ public:
         {
             // step 3: Link previous node to next of Current
             Current->prev->next = Current->next;
-            
+
+            // step 4: if Current is not the last node
+            if(Current->next != NULL)
+            Current->next->prev = Current->prev;
 
         }
 

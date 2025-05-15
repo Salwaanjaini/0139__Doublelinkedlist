@@ -95,7 +95,17 @@ public:
 
         Node *Current = START;
 
-        
+        // step 1: Tranverse the list to find the node
+        while(Current != NULL && Current->noMhs != rollNo)
+        {
+            Current = Current->next;
+        }
+
+        if(Current == NULL)
+        {
+            cout << "Record not fund" <<endl;
+            return;
+        }
 
     }
     

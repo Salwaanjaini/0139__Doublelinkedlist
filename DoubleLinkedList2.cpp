@@ -32,5 +32,11 @@ public:
 
         // step 2 : Assign value to the data fields
         newNode->noMhs = nim;
+
+        // step 3: Insert at beginning if list is empety or nim is smalllest
+        if (START == NULL || nim <= START->noMhs)
+        {
+            
+        }
     }
 };

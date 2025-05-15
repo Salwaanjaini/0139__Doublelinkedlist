@@ -118,6 +118,9 @@ public:
         }
         else
         {
+            // step 3: Link previous node to next of Current
+            Current->prev->next = Current->next;
+            
 
         }
 
